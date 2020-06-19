@@ -1,0 +1,212 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .photobox-easter-1 {
+        width: 169px;
+    }
+    .photobox-easter-1 > img, .photobox-easter-2 > img {
+        height: 245px;
+        width: auto;
+    }
+
+    .easter__infobox {
+        margin-top: 20px;
+    }
+
+    .easter__text {
+        width: 100% !important;
+    }
+    .content__item {
+        width: 183px;
+    }
+
+    .content__item:last-child {
+        display: none;
+    }
+
+    .item__photo {
+        height: 255px;
+    }
+
+    .photo__photo-item {
+        margin-left: 0px;
+        height: 245px;
+        width: auto;
+    }
+
+    .item__info {
+        width: 183px;
+        margin-top: 0;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    p, a {
+        font-size: 15px;
+    }
+    .main__site, .main__social {
+        display: none;
+    }
+
+    .mobile-main {
+        display: block;
+    }
+
+    .header__main {
+        display: block;
+        text-align: center;
+    }
+    
+    .main__name > h1 {
+        margin-bottom: 15px;
+    }
+
+    .site__nav {
+        justify-content: center;
+    }
+
+    .site__nav > li:last-child {
+        margin-right: 0px;
+    }
+
+    .photobox-header-2 {
+        display: none;       
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.header__content {
+        flex-direction: column-reverse;
+    }
+
+    .photobox-header-2 {
+        display: block;       
+    }
+
+    .content__photobox {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .content__infobox {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+
+    .infobox__text {
+        width: 100%;
+    }
+
+    .easter__content {
+        flex-direction: column-reverse;
+        margin-top: 90px;
+    }
+
+    .photobox-header-2 {
+        display: block;       
+    }
+
+    .content__photobox {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .easter__photobox {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .photobox-easter-1 {
+        margin-top: 85px;
+        height: 245px;
+    }
+
+    .photobox-easter-2 {
+        height: 330px;
+        width: 174px;
+        margin-left: -50px;
+        margin-top: 0px;
+    }
+
+    .goods___content {
+        justify-content: space-around;
+    }
+
+    .content__item:nth-child(2) {
+        display: none;
+    }
+
+    .content-title {
+        font-size: 20px;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .site__nav > li:first-child, .site__nav > li:nth-child(3) {
+        display: none;
+    }
+
+    .site__nav > li {
+        margin-right: 25px;
+    }
+
+    .photobox-header-1 {
+        height: 245px;
+        width: 167.3px;
+    }
+
+    .photobox-header-1 > img {
+        height: 245px;
+        width: auto;
+    }
+
+    .photobox-header-2 {
+        width: 119px;
+        height: 119px;
+    }
+
+    .goods__content {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .photobox-header-2 > img {
+        width: 119px; 
+    }
+
+    .photobox-easter-2 {
+        margin-left: -112px; 
+    }
+
+    .content__item:nth-child(1) {
+        display: none;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .svg {
+        width: 100%;
+    }
+    
+    .footer-content {
+        width: 80%;
+        margin: 15px auto;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
