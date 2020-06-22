@@ -54,6 +54,7 @@ p, li {
     color: #005035;
 }
 
+
 /* Header */
 .header__main {
     display: flex;
@@ -209,11 +210,20 @@ p, li {
 
 .goods__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 569px;
+    overflow: hidden;
+}
+
+.goods__content:after {
+    content:'';
+    width:100%;
+    order:0;
 }
 
 .content__item {
-    width: 30%;
+    width: 248px;
     margin-top: 55px;
 }
 

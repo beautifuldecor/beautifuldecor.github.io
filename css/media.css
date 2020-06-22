@@ -17,13 +17,16 @@
     .easter__text {
         width: 100% !important;
     }
+
+    .goods__content {
+        height: 460px;
+    }
+
     .content__item {
         width: 183px;
     }
 
-    .content__item:last-child {
-        display: none;
-    }
+
 
     .item__photo {
         height: 255px;
@@ -139,9 +142,7 @@
         justify-content: space-around;
     }
 
-    .content__item:nth-child(2) {
-        display: none;
-    }
+ 
 
     .content-title {
         font-size: 20px;
@@ -187,9 +188,6 @@
         margin-left: -112px; 
     }
 
-    .content__item:nth-child(1) {
-        display: none;
-    }
 
     .footer {
         display: block;
