@@ -28,11 +28,11 @@ window.onload = function () {
         xhr.send();
     }
     getJSON('https://spreadsheets.google.com/feeds/cells/1JhYqoP99niOPAsUNpTLzUj0D9jx1Y3-Dfb_ps5Z3Cms/1/public/full?alt=json', function (err, data) {
-        paste(data.feed.entry, data.feed.entry.length);
+        createItems(data.feed.entry, data.feed.entry.length);
     }); 
 
 
-    function paste(_d, l) {
+    function createItems(_d, l) {
         // Create array with all items
         var itemsValues = [];
 
@@ -53,10 +53,21 @@ window.onload = function () {
               resultJSON[resultJSON.length - 1].push(list[idx++])
             }
 
+            createItemsHTML(resultJSON);
+
         };
     };
 
-    console.log(resultJSON);
+    
+    var goodsContent = doc.getElementsByClassName('goods__content')[0],
+        contentItem = '';
+
+        function createItemsHTML(resultJSON) {        
+        for (var i = 1; i <= resultJSON.length-1; i++) {
+            contentItem = `<div class="content__item"><div class="item__photo"> <img src="${resultJSON[i]['3']}" alt="${resultJSON[i][1]}" class="photo__photo-item"></div><div class="item__info"><h1 class="item__title">${resultJSON[i][1]}</h1><p class="item__paragraph">${resultJSON[i][7]}</p> <a href="${resultJSON[i][2]}" class="more-btn">Show more</a></div></div>`
+            goodsContent.innerHTML += contentItem;
+        }
+    }
 }
 
 

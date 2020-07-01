@@ -212,7 +212,7 @@ p, li {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 569px;
+    height: 520px;
     overflow: hidden;
 }
 

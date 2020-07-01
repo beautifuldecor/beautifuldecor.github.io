@@ -152,7 +152,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-    .site__nav > li:first-child, .site__nav > li:nth-child(3) {
+    .site__nav > li:first-child {
         display: none;
     }
 
