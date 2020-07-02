@@ -54,6 +54,10 @@ p, li {
     color: #005035;
 }
 
+.sectionMore {
+    height: auto!important;
+    overflow: unset!important;
+}
 
 /* Header */
 .header__main {
@@ -262,4 +266,44 @@ p, li {
 
 .footer-content {
     margin: auto;
+}
+
+/* Post */
+.detailForPost {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+
+    display: flex;
+    background-color: #fff;
+}
+
+.detailForPost__photo {
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+}
+
+.detailForPost__photo > div > img {
+    display: block;
+    margin: auto;
+    width: 50vw;
+    height: auto;
+    margin-top: -20%;
+}
+
+.detailForPost__info {
+    background-color: #fff;
+    margin: auto;
+    width: 50vw;
+}
+
+.post-infobox {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: 250px;
+    overflow: hidden;
+    overflow-y: auto;
 }

@@ -148,6 +148,10 @@
         font-size: 20px;
     }
 
+    
+
+
+
 }
 
 /* Extra Small Devices, Phones */
@@ -200,6 +204,23 @@
     .footer-content {
         width: 80%;
         margin: 15px auto;
+    }
+
+    /* Post */
+    .detailForPost {
+        display: block;
+    }
+
+    .detailForPost__photo > div > img{
+        width: 100vw;
+    }
+
+    .detailForPost__info {
+        background-color: #fff;
+        margin: auto;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
     }
 }
 
